@@ -1,0 +1,5 @@
+#pragma once
+
+#if !__has_cpp_attribute(maybe_unused)
+#define maybe_unused gnu::unused
+#endif

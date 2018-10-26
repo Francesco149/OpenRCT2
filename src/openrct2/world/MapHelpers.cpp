@@ -12,7 +12,7 @@
 #include "Map.h"
 #include "Surface.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 /**
  * Not perfect, this still leaves some particular tiles unsmoothed.

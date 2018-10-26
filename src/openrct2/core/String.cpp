@@ -644,8 +644,8 @@ namespace String
         char* buffer_limit = &buffer[0] + (char_size * src.length());
 
         // Ready the source string as well...
-        const char16_t* source = src.getTerminatedBuffer();
-        const char16_t* source_limit = source + src.length();
+        const UChar* source = src.getTerminatedBuffer();
+        const UChar* source_limit = source + src.length();
 
         // Convert the lot.
         char* buffer_target = &buffer[0];

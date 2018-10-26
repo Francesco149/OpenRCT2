@@ -20,7 +20,7 @@
 #include "title/TitleSequencePlayer.h"
 
 #include <SDL2/SDL.h>
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <chrono>
 #include <cmath>
 #include <cstdlib>

@@ -9,7 +9,7 @@
 
 #include "../interface/Theme.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 #include <limits>
 #include <openrct2-ui/interface/Dropdown.h>

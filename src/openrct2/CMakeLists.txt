@@ -112,7 +112,7 @@ endif ()
 
 if (NOT MINGW AND NOT MSVC)
     # For unicode code page conversion.
-    find_package(ICU 59.0 REQUIRED COMPONENTS uc)
+    find_package(ICU 57.1 REQUIRED COMPONENTS uc)
     if (STATIC)
         target_link_libraries(${PROJECT} ${ICU_STATIC_LIBRARIES})
     else ()

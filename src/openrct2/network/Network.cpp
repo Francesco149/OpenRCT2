@@ -2561,7 +2561,7 @@ void Network::Client_Handle_TICK([[maybe_unused]] NetworkConnection& connection,
             {
                 auto textLen = std::strlen(text);
                 server_sprite_hash.resize(textLen);
-                std::memcpy(server_sprite_hash.data(), text, textLen);
+                std::memcpy(&server_sprite_hash[0], text, textLen);
             }
         }
     }

@@ -39,7 +39,7 @@
 #include "Sprite.h"
 #include "Surface.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 using namespace OpenRCT2;
 

@@ -18,7 +18,7 @@
 #include "Language.h"
 #include "Localisation.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <string>
 #include <vector>
 #ifndef _WIN32

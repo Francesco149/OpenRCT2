@@ -61,7 +61,7 @@ bool NetworkKey::LoadPrivate(IStream* stream)
     }
 
     std::string pem(size, '\0');
-    stream->Read(pem.data(), pem.size());
+    stream->Read(&pem[0], pem.size());
 
     try
     {
@@ -93,7 +93,7 @@ bool NetworkKey::LoadPublic(IStream* stream)
     }
 
     std::string pem(size, '\0');
-    stream->Read(pem.data(), pem.size());
+    stream->Read(&pem[0], pem.size());
 
     try
     {

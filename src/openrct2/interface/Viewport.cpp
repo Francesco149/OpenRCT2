@@ -28,7 +28,7 @@
 #include "Window.h"
 #include "Window_internal.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cstring>
 
 using namespace OpenRCT2;

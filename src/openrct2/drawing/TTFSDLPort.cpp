@@ -31,6 +31,7 @@ misrepresented as being the original software.
 #    include <stdio.h>
 #    include <stdlib.h>
 #    include <string.h>
+#    include <attributes_polyfill>
 
 #    pragma clang diagnostic push
 #    pragma clang diagnostic ignored "-Wdocumentation"

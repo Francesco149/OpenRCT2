@@ -40,7 +40,7 @@
 #include "../world/Sprite.h"
 #include "Viewport.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 #include <cstdarg>
 #include <deque>

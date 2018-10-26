@@ -11,7 +11,7 @@
 #include "AudioFormat.h"
 
 #include <SDL2/SDL.h>
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 #include <openrct2/audio/AudioChannel.h>
 #include <openrct2/audio/AudioSource.h>

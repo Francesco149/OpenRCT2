@@ -17,7 +17,7 @@
 #include "../title/TitleScreen.h"
 #include "zlib.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cctype>
 #include <cmath>
 #include <ctime>

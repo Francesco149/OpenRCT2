@@ -22,7 +22,7 @@
 #include "Station.h"
 #include "Track.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 enum
 {

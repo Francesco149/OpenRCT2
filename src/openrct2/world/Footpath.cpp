@@ -30,7 +30,7 @@
 #include "Sprite.h"
 #include "Surface.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 void footpath_update_queue_entrance_banner(int32_t x, int32_t y, rct_tile_element* tileElement);
 

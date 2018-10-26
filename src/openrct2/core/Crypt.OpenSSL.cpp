@@ -242,7 +242,7 @@ private:
 
         auto keylen = BIO_pending(bio);
         std::string result(keylen, 0);
-        BIO_read(bio, result.data(), keylen);
+        BIO_read(bio, &result[0], keylen);
         BIO_free_all(bio);
         return result;
     }

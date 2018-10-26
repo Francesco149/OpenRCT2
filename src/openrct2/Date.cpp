@@ -12,7 +12,7 @@
 #include "Date.h"
 #include "core/Guard.hpp"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 using namespace OpenRCT2;
 

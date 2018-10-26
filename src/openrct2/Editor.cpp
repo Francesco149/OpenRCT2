@@ -34,7 +34,7 @@
 #include "world/Park.h"
 #include "world/Scenery.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <array>
 #include <vector>
 

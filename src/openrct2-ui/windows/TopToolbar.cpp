@@ -10,7 +10,7 @@
 #include "../UiContext.h"
 #include "../interface/InGameConsole.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <limits>
 #include <openrct2-ui/interface/Dropdown.h>
 #include <openrct2-ui/interface/LandTool.h>

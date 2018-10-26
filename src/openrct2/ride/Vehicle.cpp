@@ -41,7 +41,7 @@
 #include "TrackData.h"
 #include "VehicleData.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 static void vehicle_update(rct_vehicle* vehicle);
 static void vehicle_update_crossings(const rct_vehicle* vehicle);

@@ -36,7 +36,7 @@
 #include "../world/Surface.h"
 #include "Peep.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 // Locations of the spiral slide platform that a peep walks from the entrance of the ride to the
 // entrance of the slide. Up to 4 waypoints for each 4 sides that an ride entrance can be located

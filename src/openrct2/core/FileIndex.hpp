@@ -226,7 +226,12 @@ private:
                     stepSize = totalCount - rangeStart;
                 }
 
+            #if __cplusplus >= 201703L
                 auto& items = containers.emplace_back();
+            #else
+                containers.emplace_back();
+                auto& items = containers.back();
+            #endif
 
                 jobPool.AddTask(std::bind(
                     &FileIndex<TItem>::BuildRange, this, language, std::cref(scanResult), rangeStart, rangeStart + stepSize,

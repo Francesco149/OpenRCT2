@@ -10,7 +10,7 @@
 #include "Viewport.h"
 #include "Window.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <openrct2/Context.h>
 #include <openrct2/Editor.h>
 #include <openrct2/Game.h>

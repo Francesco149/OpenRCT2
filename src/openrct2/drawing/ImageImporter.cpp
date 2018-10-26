@@ -37,8 +37,16 @@ ImportResult ImageImporter::Import(
     const auto height = image.Height;
 
     auto pixels = GetPixels(image.Pixels.data(), width, height, flags, mode);
+#ifdef __cpp_structured_bindings
     auto [buffer, bufferLength] = flags & IMPORT_FLAGS::RLE ? EncodeRLE(pixels.data(), width, height)
                                                             : EncodeRaw(pixels.data(), width, height);
+#else
+    std::tuple<void*, size_t> t = flags & IMPORT_FLAGS::RLE ? EncodeRLE(pixels.data(), width, height)
+                                                            : EncodeRaw(pixels.data(), width, height);
+    void* buffer;
+    size_t bufferLength;
+    std::tie(buffer, bufferLength) = t;
+#endif
 
     rct_g1_element outElement;
     outElement.offset = (uint8_t*)buffer;

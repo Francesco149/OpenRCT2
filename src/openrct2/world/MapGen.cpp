@@ -26,7 +26,7 @@
 #include "SmallScenery.h"
 #include "Surface.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 #include <cstring>
 #include <vector>

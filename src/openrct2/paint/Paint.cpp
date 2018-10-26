@@ -17,7 +17,7 @@
 #include "sprite/Paint.Sprite.h"
 #include "tile_element/Paint.TileElement.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 // Globals for paint clipping
 uint8_t gClipHeight = 128; // Default to middle value

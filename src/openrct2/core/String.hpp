@@ -14,6 +14,7 @@
 #include <cstdarg>
 #include <cstddef>
 #include <string>
+#include <string_view>
 #include <vector>
 
 namespace CODE_PAGE

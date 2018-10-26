@@ -2318,7 +2318,12 @@ static void window_ride_construction_draw_track_piece(
 }
 
 static rct_tile_element _tempTrackTileElement;
-static rct_tile_element _tempSideTrackTileElement = { 0x80, 0x8F, 128, 128, 0, 0, 0, 0 };
+union rct_tile_element_union {
+    uint8_t bytes[sizeof(rct_tile_element)];
+    rct_tile_element data;
+};
+static rct_tile_element_union _tempSideTrackTileElementBytes = { 0x80, 0x8F, 128, 128, 0, 0, 0, 0 };
+static rct_tile_element _tempSideTrackTileElement = _tempSideTrackTileElementBytes.data;
 static rct_tile_element* _backupTileElementArrays[5];
 
 /**

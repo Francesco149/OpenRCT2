@@ -11,7 +11,7 @@
 #include "Date.h"
 #include "StringIds.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <time.h>
 
 uint16_t gDateMonthTicks;

@@ -1,3 +1,6 @@
+Someone was trying to compile this on debian stretch (pre-c++17) so I made
+this hackjob to get it to compile
+
 # OpenRCT2
 An open-source re-implementation of RollerCoaster Tycoon 2. A construction and management simulation video game that simulates amusement park management.
 

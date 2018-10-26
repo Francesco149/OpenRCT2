@@ -45,7 +45,7 @@
 #include "TileInspector.h"
 #include "Wall.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 
 /**
  * Replaces 0x00993CCC, 0x00993CCE

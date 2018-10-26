@@ -46,7 +46,7 @@
 #include "../world/Surface.h"
 #include "Staff.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <limits>
 
 #if defined(DEBUG_LEVEL_1) && DEBUG_LEVEL_1

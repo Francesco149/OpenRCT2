@@ -157,7 +157,7 @@ private:
         {
             // Convert back slashes to forward slashes
             result = std::string(path);
-            for (auto ch = result.data(); *ch != '\0'; ch++)
+            for (auto ch = &result[0]; *ch != '\0'; ch++)
             {
                 if (*ch == '\\')
                 {

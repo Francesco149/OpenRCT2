@@ -55,7 +55,7 @@
 #include "Track.h"
 #include "TrackData.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <climits>
 #include <cstdlib>
 #include <limits>

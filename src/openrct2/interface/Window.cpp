@@ -33,7 +33,7 @@
 #include "Widget.h"
 #include "Window_internal.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 
 std::vector<std::unique_ptr<rct_window>> g_window_list;

@@ -1,5 +1,5 @@
 # CMAKE project for openrct2
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.7.2)
 if (CMAKE_BINARY_DIR STREQUAL CMAKE_SOURCE_DIR)
     message(FATAL_ERROR "Building in-source is not supported! Create a build dir and remove ${CMAKE_SOURCE_DIR}/CMakeCache.txt")
 endif()
@@ -12,7 +12,7 @@ endif ()
 include(CheckCXXCompilerFlag)
 include(GNUInstallDirs)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(ROOT_DIR "${CMAKE_CURRENT_LIST_DIR}")
@@ -175,6 +175,11 @@ if (CXX_WARN_SUGGEST_FINAL_METHODS)
     # Disable -Wsuggest-final-methods via pragmas where due.
    add_definitions(-D__WARN_SUGGEST_FINAL_METHODS__)
 endif ()
+
+include_directories("${ROOT_DIR}/src/polyfill")
+if(NOT MSVC)
+    add_definitions(-include attributes_polyfill)
+endif()
 
 if(EXISTS "${ROOT_DIR}/discord-rpc")
     # Don't build discord's examples, some of which are in C and do not honour

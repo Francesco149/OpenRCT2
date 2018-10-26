@@ -22,7 +22,7 @@
 #include "../scenario/Scenario.h"
 #include "Fountain.h"
 
-#include <algorithm>
+#include <algorithm_polyfill>
 #include <cmath>
 
 uint16_t gSpriteListHead[6];
